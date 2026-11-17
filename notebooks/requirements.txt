@@ -1,0 +1,27 @@
+# Setup for running 01_training.ipynb / 02_deployment.ipynb (from the repo root):
+#
+#   uv venv && source .venv/bin/activate        # or your own Python 3.13 env
+#   uv pip install -e .                         # installs the src package + deps
+#   uv pip install -r notebooks/requirements.txt
+#   uv pip install ipykernel && python -m ipykernel install --user --name itu-sdse
+#   jupyter lab notebooks/
+#
+# The notebooks import the project package (src.models.train, src.data.fetch,
+# src.deployment.logging_wrapper), which is why `uv pip install -e .` from the
+# repo root is required in addition to this file.
+jupyter
+torch
+torchvision
+mlflow>=2.18
+boto3
+numpy
+pandas
+scikit-learn
+scipy
+pillow
+requests
+fastapi
+uvicorn
+# dvc is intentionally not needed anymore: on v2 the data is not DVC-tracked at
+# the repo root - src.data.fetch downloads metadata + images from the object
+# store directly.

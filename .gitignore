@@ -1,0 +1,76 @@
+# Generated files and artifacts
+artifacts/*
+mlruns/
+/data/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# DVC
+.dvc/config.local
+.dvc/tmp
+.dvc/cache
+
+# Raw dataset files (large binary files - ICPR 2024)
+data/Clean/
+data/Glass/
+data/Plastic/
+data/Rubber/
+data/Sand/
+
+# MLflow
+mlruns/
+
+# Artifacts written by training/serving runs - except the drift baseline,
+# which is committed so a fresh clone can build docker/Dockerfile.model-serve
+artifacts/*
+!artifacts/drift_baseline_stats.json
+
+# OS
+.DS_Store
+Thumbs.db
+HANDOVER**.md
+/test_metadata.csv
+# MLflow state
+mlflow-state/
+
+# The exported serving model (models/model/) IS committed on this branch so a
+# fresh clone can build docker/Dockerfile.model-serve without training first.
+# (On the other branches CI produces it as a workflow artifact instead.)
+
+.vibe/

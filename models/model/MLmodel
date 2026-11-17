@@ -1,0 +1,19 @@
+artifact_path: /Users/jeppekristensen/.vibe/worktrees/itu-sdse-project-fd03f16fc5ad/v2/mlflow-state/artifacts/models/m-9bd4540a613d493e89b4e79096a4ca8c/artifacts
+flavors:
+  python_function:
+    cloudpickle_version: 3.1.2
+    code: null
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.13.14
+    streamable: false
+mlflow_version: 3.17.1
+model_id: m-9bd4540a613d493e89b4e79096a4ca8c
+model_size_bytes: 8472538
+model_uuid: m-9bd4540a613d493e89b4e79096a4ca8c
+prompts: null
+run_id: 19907deab10341e79afae8f67a3f918b
+utc_time_created: '2026-11-08 06:41:10.014001'
